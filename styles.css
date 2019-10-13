@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body{
+    background-color: aliceblue;
+}
+/*********media query just for clearing test, this page is not responsive*************/
+@media screen and (max-width: 600px) {
+    body {
+      background-color: bisque;
+    }
+  }
+
+p {
+    word-wrap:break-word;
+    font-weight: 400;
+    color: #000;
+}
+
+.cleared {
+    clear: left;
+  }
+.container{
+    position: relative;
+    top: 5rem;
+    margin: 0 auto;
+    width: 80%;
+}
+/********* Nav Bar Styles**********************/
+#header{
+ position: fixed;
+ top: 0;
+ width: 100%;
+ background-color: inherit;
+ z-index: 10;
+} 
+.logo{
+    float: left;
+    width: 40vw;
+
+}
+#header-img{
+    width: 100%;
+    height: 100%;
+    max-width: 300px;
+}
+
+#nav-bar {
+    float: right;
+    text-align: center;
+    width:50vw;
+}
+
+
+.nav-list{
+    list-style: none;
+    padding: 0.5rem;
+    
+}
+
+.nav-list li{
+    display: inline;
+    padding: 1rem;
+    margin: 2rem;
+}
+
+.nav-list li a{
+    text-decoration: none;
+}
+
+/******************features list styles********************************/
+#features-list{
+   
+    z-index: 1;
+    text-align: center;
+   
+}
+
+.form-item{
+   margin: 1rem;
+}
+
+.form-item input[type="email"]{
+    width: 20vw;
+    padding: 0.3rem;
+    margin-top: 0.5rem;
+}
+
+.form-item input[type="submit"]{
+    background-color: #f1c40f;
+    padding: 0.3rem;
+    border: none;
+    cursor: pointer;
+
+}
+
+.features{
+    padding: 3rem;
+    text-align: center;
+    margin: 1rem;
+
+}
+
+
+
+.icon{
+    color: darkorange;
+    float: left;
+   padding-right: 1rem;
+   width: 20%;
+   
+   
+   
+}
+
+.desc{
+    text-align: left;
+    float: left;
+    width: 80%;
+}
+
+/*********************How-it-works styles******************************/
+
+#how-it-works{
+    position: relative;
+    top: 3rem;
+    text-align: center;
+}
+
+#video{
+    width: 500px;
+}
+
+/*********************Pricing Styles*********************************/
+#pricing{
+    position: relative;
+    top: 7rem;
+    display: flex;
+    justify-content: center;
+    
+}
+.plan{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc(100% / 3);
+    margin: 10px;
+    border: 1px solid #000;
+    border-radius: 3px;
+}
+.plan .level{
+    background-color: #ddd;
+    color: black;
+    padding: 15px 0;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.plan  h1{
+    margin: 15px 0;
+}
+
+
+.list{
+    list-style: none;
+    margin: 10px 0;
+}
+
+.list-item{
+    margin: 5px 0;
+}
+.btn{
+    background-color: #f1c40f;
+    padding: 0.5rem;
+    border: none;
+    margin: 5px 0;
+    cursor: pointer;
+}
+/****************Footer Styles******************************/
+footer{
+    position: relative;
+    top:10rem;
+    background-color: #ddd;
+    text-align: right;
+    font-weight: 900;
+}
+
+.footer-list{
+    list-style: none;
+}
+
+.footer-list li{
+    display: inline-block;
+    margin: 10px;
+}
